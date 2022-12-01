@@ -20,14 +20,47 @@
               <ul>
                 <li><a href="#" class="under">HOME</a></li>
                 <li><a href="#" class="under">DEALS</a></li>
-                <li><a href="#" class="under">SIGNUP</a></li>
-                <li><a href="#" class="under">CONTACT US</a></li>
-<button onclick="document.getElementById('id01').style.display='block'">Login</button>
-<div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'"
+                <li>
+<button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+
+<div id="id01" class="modals">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Closes Modal"></span>
+  <form class="modal-contents"action="" method="POST">
+    <div class="containers">
+      <h1>Sign Up</h1>
+      <p>Create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Confirm Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfixs">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtns">Cancel</button>
+        <button type="submit" class="signup">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+</li>
+<li><a href="#" class="under">CONTACT US</a></li>
+                <div class="login">
+<button onclick="document.getElementById('id02').style.display='block'">Login</button>
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'"
 class="close" title="Close Modal">&times;</span>
 
-  <form class="modal-content animate" action="/action_page.php">
+  <form class="modal-content animate"action="" method="POST">
     <div class="imgcontainer">
       <img src="img.jpg" alt="Avatar" class="avatar">
     </div>
@@ -46,10 +79,11 @@ class="close" title="Close Modal">&times;</span>
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
       <span class="psw"><a href="#">Forgot password?</a></span>
     </div>
   </form>
+</div>
 </div>
               </ul>
               
